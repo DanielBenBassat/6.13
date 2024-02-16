@@ -5,8 +5,8 @@ FILTER = "udp"
 
 def receive_secret_message(packet):
     """
-    receive packet and if its an empty udp packet turn the destention port to his asci value and print i
-    :param packet: packet the client send that represent a asci value
+    receive packet and if its an empty udp packet turn the destention port to his asci value and print it
+    :param packet: packet the client send that represent an asci value
     :return: none
     """
     if packet.haslayer(UDP) and len(packet[UDP].payload) == 0:
