@@ -12,7 +12,7 @@ def send_secret_message(message):
     for char in message:
         ascii_value = ord(char)
         packet = IP(dst=IP_ADDRESS) / UDP(dport=ascii_value)
-        send (packet)
+        send(packet)
 
 
 def main():
